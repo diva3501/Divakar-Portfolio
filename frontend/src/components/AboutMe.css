@@ -7,12 +7,17 @@
 .about-header {
     text-align: center;
     margin-bottom: 20px;
+    color: white; /* Setting text color to white */
+    background-color: #23272b; /* Adding background color */
+    padding: 20px; /* Adding padding for better visibility */
 }
 
 .tab-buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    background-color: #23272b; /* Adding background color */
+    padding: 10px; /* Adding padding for better visibility */
 }
 
 .tab-buttons button {
@@ -31,24 +36,10 @@
     background-color: #FF014F;
 }
 
-.education-box,
-.skills-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.education-box .section,
-.skills-box .section {
-    width: 48%;
-}
-
 .section {
     padding: 20px;
     border-radius: 5px;
-    background-color: #23272b;
+    background-color: #23272b; /* Adding background color */
     box-shadow: 5px 5px 10px #121315, -1px -1px 5px #4e555d;
     margin-bottom: 20px;
 }
@@ -94,7 +85,6 @@
     }
 }
 
-/* Added styles for skill icons */
 .skill-category {
     margin-bottom: 20px;
 }
@@ -105,23 +95,15 @@
 }
 
 .icon-list .icon {
-    font-size: 40px;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
+    font-size: 50px;
+    color: white;
+    margin: 0 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icon-list .icon:hover {
     transform: scale(1.2);
-}
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    color: #FF014F;
 }
 
 .skill-icon {
@@ -129,9 +111,16 @@
 }
 
 .skill-icon svg {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .skill-icon:hover svg {
     transform: scale(1.2);
+    color: #FF014F;
+}
+.skill-category{
+    color: white;
+}
+.skill-category:last-child .icon {
+    font-size: 50px; /* Adjust the font size to make the backend icons larger */
 }
