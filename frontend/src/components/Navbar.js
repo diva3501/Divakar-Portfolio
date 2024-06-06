@@ -1,33 +1,30 @@
-// Navbar.js
 import React from 'react';
-import './styles.css';
-const Navbar = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div className="container">
-        <a className="navbar-brand" href="#">Your Name</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+import './Navbar.css'; // Import your CSS file
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="#home">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#projects">Projects</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+function Navbar() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <div className="nav">
+      <div className="nav-prof">
+        <div className="prof-pic"></div>
+        DIVAKAR
       </div>
-    </nav>
+      <div className="nav-opt">
+        <ul>
+          <li><a href="#home" onClick={() => scrollToSection('home')}>Home</a></li>
+          <li><a href="#about" onClick={() => scrollToSection('about')}>About</a></li>
+          <li><a href="#skills" onClick={() => scrollToSection('skills')}>Skills</a></li>
+          <li><a href="#projects" onClick={() => scrollToSection('projects')}>My Projects</a></li>
+          <li><a href="#contact" onClick={() => scrollToSection('contact')}>Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
   );
 }
 

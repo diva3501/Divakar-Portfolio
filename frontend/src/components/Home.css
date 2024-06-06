@@ -1,0 +1,109 @@
+/* Home.css */
+
+/* Welcome Page */
+.wlcm-page {
+    display: flex;
+    height: 100vh;
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+
+.w-l-sec {
+    width: 60%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cont-box1 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+    font-size: 1vw;
+}
+
+.soc-box {
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+
+.social,
+.skills {
+    width: 50%;
+}
+
+.im {
+    display: inline-block;
+    width: 20%;
+    color: gray;
+    font-weight: 900;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    background-image: linear-gradient(145deg, #242527, #191c1e);
+    box-shadow: 5px 5px 5px #121315;
+    margin-left: 3%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-icon {
+    aspect-ratio: 1/1;
+    width: 20%;
+    color: gray;
+    font-weight: 900;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    background-image: linear-gradient(145deg, #242527, #191c1e);
+    box-shadow: 5px 5px 5px #121315;
+    margin-left: 3%;
+}
+
+.social-icon:hover {
+    background-image: linear-gradient(145deg, #23272b, #1e2024);
+    position: relative;
+    bottom: 2px;
+}
+
+.w-r-sec {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic {
+    width: 90%;
+    height: 80%;
+    background-image: linear-gradient(145deg, #17181a, #23272b);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #121315, -1px -1px 5px #4e555d;
+    position: relative;
+    overflow: hidden; /* Ensure the image fits perfectly */
+}
+
+.self-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fit the image perfectly */
+    position: relative;
+    z-index: 1;
+}
+
+.inner-pic {
+    height: 110%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+}
