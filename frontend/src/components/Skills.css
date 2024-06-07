@@ -17,12 +17,13 @@
 .skills-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 20px;
     animation: fadeIn 1s ease;
 }
 
+
 .skill-category {
-    width: 48%;
+    width: 45%;
     margin-bottom: 20px;
     color: white;
     background-color: #343a40;
@@ -43,6 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: auto;
 }
 
 .skill-item {

@@ -1,15 +1,19 @@
 /* nav-section */
 
-.nav {
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .nav {
     height: 15vh;
     width: 100%;
     border: 1px solid black;
     display: flex;
     align-items: center;
     font-size: 1vw;
-}
-
-.nav-stick {
+  }
+  
+  .nav-stick {
     height: 13vh;
     width: 100%;
     backdrop-filter: blur(10px);
@@ -19,9 +23,9 @@
     top: 0%;
     font-size: 1vw;
     z-index: 22;
-}
-
-.nav-prof {
+  }
+  
+  .nav-prof {
     height: 100%;
     width: 35%;
     display: flex;
@@ -32,62 +36,62 @@
     font-size: 2vw;
     color: gray;
     font-weight: 900;
-}
-
-.prof-pic {
+  }
+  
+  .prof-pic {
     width: 10%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 2px solid gray;
-    
+  
     background-size: cover;
-}
-
-.nav-opt {
+  }
+  
+  .nav-opt {
     height: 100%;
     width: 55%;
-}
-
-ul {
+  }
+  
+  ul {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     list-style: none;
-}
-
-.d-bt {
+  }
+  
+  .d-bt {
     align-content: center;
     position: relative;
     height: 100%;
-}
-
-.def {
+  }
+  
+  .def {
     display: none;
-}
-
-.drop {
+  }
+  
+  .drop {
     display: flex;
     flex-direction: column;
     position: absolute;
     padding: 10px;
     top: 100%;
     backdrop-filter: blur(10px);
-}
-
-.nav-opt ul li a {
+  }
+  
+  .nav-opt ul li a {
     color: gray;
     font-weight: 900;
     text-decoration: none;
     transition: all 0.3s linear;
-}
-
-.nav-opt ul li a:hover {
+  }
+  
+  .nav-opt ul li a:hover {
     color: rgb(234, 224, 224);
-}
-
-.nav button {
+  }
+  
+  .nav button {
     height: 45%;
     width: 7%;
     border-radius: 5px;
@@ -96,11 +100,12 @@ ul {
     color: #FF014F;
     box-shadow: 5px 5px 5px #121315, -1px -1px 19px #4e555d;
     transition: all 0.3s linear;
-}
-
-.nav button:hover {
+  }
+  
+  .nav button:hover {
     background-image: linear-gradient(145deg, #23272b, #1e2024);
     position: relative;
     bottom: 2px;
     box-shadow: 5px 5px 5px #121315;
-}
+  }
+  

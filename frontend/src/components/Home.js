@@ -3,6 +3,10 @@ import { SocialIcon } from 'react-social-icons';
 import './Home.css';
 
 const Home = () => {
+    const openResume = () => {
+        window.open(process.env.PUBLIC_URL + '/Resume.pdf', '_blank');
+    };
+
     return (
         <div className="home wlcm-page" id="wlcm">
             <div className="w-l-sec">
@@ -19,15 +23,17 @@ const Home = () => {
                     practical expertise to the table. Beyond coding, I excel as a proficient public speaker, adept at articulating complex ideas 
                     with clarity and conviction. Driven by a relentless pursuit of innovation, 
                     I'm committed to leveraging technology to make a meaningful impact in our ever-evolving digital landscape.</p>
+                    <button className="resume-button" onClick={openResume}>Resume</button>
                 </div>
                 <div className="soc-box">
                     <div className="social">
-                        <h4 style={{ color: "gray" }}>FIND WITH ME</h4><br />
-                        <SocialIcon url="https://www.facebook.com" className="social-icon" style={{ gridArea: '1 / 1' }} />
-                        <SocialIcon url="https://www.instagram.com" className="social-icon" style={{ gridArea: '1 / 2' }} />
-                        <SocialIcon url="https://www.linkedin.com" className="social-icon" style={{ gridArea: '2 / 1' }} />
-                        <SocialIcon url="https://www.github.com" className="social-icon" style={{ gridArea: '2 / 2' }} />
-                        <SocialIcon url="https://www.twitter.com" className="social-icon" style={{ gridArea: '3 / 1' }} />
+                        <h4 style={{ color: "gray" }}>FIND WITH ME</h4>
+                        
+                        <SocialIcon url="https://www.instagram.com/being_divakar/" className="social-icon" style={{ gridArea: '1 / 2' }} />
+                        <SocialIcon url="https://www.linkedin.com/in/divakar-g-469351263/" className="social-icon" style={{ gridArea: '2 / 1' }} />
+                        <SocialIcon url="https://github.com/diva3501" className="social-icon" style={{ gridArea: '2 / 2' }} />
+                        <SocialIcon url="https://x.com/Divakar3501" className="social-icon" style={{ gridArea: '3 / 1' }} />
+                        <SocialIcon url="https://www.facebook.com/profile.php?id=100091585033458" className="social-icon" style={{ gridArea: '1 / 1' }} />
                     </div>
                 </div>
             </div>

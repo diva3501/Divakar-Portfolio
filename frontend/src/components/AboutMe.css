@@ -85,7 +85,7 @@
     }
 }
 
-.skill-category {
+.skill-categoryy {
     margin-bottom: 20px;
 }
 
@@ -118,9 +118,9 @@
     transform: scale(1.2);
     color: #FF014F;
 }
-.skill-category{
+.skill-categoryy{
     color: white;
 }
-.skill-category:last-child .icon {
+.skill-categoryy:last-child .icon {
     font-size: 50px; /* Adjust the font size to make the backend icons larger */
 }

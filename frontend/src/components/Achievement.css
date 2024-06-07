@@ -1,0 +1,120 @@
+/* Achievement.css */
+:root {
+    --box-shadow-color: rgba(255, 1, 79, 0.2); /* Default shadow color */
+    --box-shadow-hover-color: rgba(255, 1, 79, 0.5); /* Shadow color on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pinScaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes shadowGrow {
+    from {
+        box-shadow: 0 4px 8px var(--box-shadow-color);
+    }
+    to {
+        box-shadow: 0 8px 16px var(--box-shadow-hover-color);
+    }
+}
+
+.achievements-container {
+    background-color: #23272b; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease;
+    transition: box-shadow 0.3s ease;
+}
+.achievements-container:hover {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+}
+
+.achievements-heading {
+    color: #ff014f; /* Pink color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.achievements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Achievement.css */
+.achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadeIn 0.5s ease;
+    padding-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #23272b;
+    box-shadow: 0 4px 8px var(--box-shadow-color); /* Use CSS variable for box-shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+.pin {
+    width: 20px;
+    height: 20px;
+    background-color: #666;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    z-index: 1;
+}
+
+.achievement:hover .pin {
+    opacity: 1;
+    animation: pinScaleIn 0.3s ease forwards;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    flex: 1;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--box-shadow-color); /* Use CSS variable for box-shadow */
+}
+
+.achievement:hover .text {
+    animation: shadowGrow 0.3s ease forwards;
+}
+
+.achievement-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.achievement-description {
+    margin: 0;
+    text-align: center; 
+}

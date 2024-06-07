@@ -25,7 +25,7 @@ const About = () => {
             
             <div className="tab-buttons">
                 <button className={activeTab === 'education' ? 'active' : ''} onClick={() => toggleTab('education')}>Education</button>
-                <button className={activeTab === 'skills' ? 'active' : ''} onClick={() => toggleTab('skills')}>Skills</button>
+                <button className={activeTab === 'skills' ? 'active' : ''} onClick={() => toggleTab('skills')}>Experienced In</button>
             </div>
         </div>
             <div className="content">
@@ -33,9 +33,9 @@ const About = () => {
                     <h2>Education</h2>
                     <div className="education">
                         <div className="education-info">
-                            <h2 style={{ color: 'aliceblue' }}>Higher Secondary</h2>
-                            <span style={{ color: '#FF014F' }}>2019 - 2022</span>
+                            <h2 style={{ color: '#FF014F' }}>Higher Secondary</h2>                           
                             <h1 style={{ color: 'white', fontWeight: 900, fontSize: '30px' }}>Sri Vidhyalaskshmi Matric Hr Secondary School</h1>
+                            <span style={{ color: '#FF014F' }}>2019 - 2022</span>
                         </div>
                         <div className="r-cont">
                             <div className="r-cont-box">
@@ -44,9 +44,9 @@ const About = () => {
                                 <p style={{ width: '80%' }}>12th Grade - 95.6%</p>
                             </div>
                             <div className="r-cont-box">
-                                <h2 style={{ color: 'aliceblue' }}>Degree</h2>
-                                <span style={{ color: '#FF014F' }}> (2022 - till now)</span>
+                                <h2 style={{ color: '#FF014F' }}>Degree</h2>
                                 <h1 style={{ color: 'white', fontWeight: 900, fontSize: '30px' }}>R.M.K Engineering College</h1>
+                                <span style={{ color: '#FF014F' }}> 2022 - till now</span>
                                 <div className="res-line"></div>
                                 <p style={{ width: '80%' }}>Current CGPA - 8.86/10</p>
                             </div>
@@ -56,14 +56,14 @@ const About = () => {
                 <div ref={skillsRef} className={`section ${activeTab === 'skills' ? 'active' : ''}`}>
                     <h2>Experienced In</h2>
                     <div className="skills">
-                        <div className="skill-category">
+                        <div className="skill-categoryy">
                             <h3 style={{ color: 'white' }}>Frontend</h3>
                             <div className="icon-list">
                                 <GrReactjs className="skill-icon icon" />
                                 <SiFlutter className="skill-icon icon" />
                             </div>
                         </div>
-                        <div className="skill-category">
+                        <div className="skill-categoryy">
                             <h3 style={{ color: 'white' }}>Backend</h3>
                             <div className="icon-list">
                                 <RiFirebaseFill className="skill-icon icon" />

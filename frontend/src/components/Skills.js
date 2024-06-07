@@ -9,10 +9,12 @@ const Skills = () => {
                 <div className="skill-category">
                     <h3>Languages</h3>
                     <div className="text-list">
-                        <p className="skill-item">C/C++</p>
                         <p className="skill-item">Java</p>
-                        <p className="skill-item">JavaScript</p>
                         <p className="skill-item">Python</p>
+                        <p className="skill-item">C/C++</p>  
+                        <p className="skill-item">SQL</p>                      
+                        <p className="skill-item">JavaScript</p>
+                        
                     </div>
                 </div>
                 <div className="skill-category">
