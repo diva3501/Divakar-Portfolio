@@ -1,4 +1,3 @@
-// Achievement.js
 import React from 'react';
 import './Achievement.css';
 

@@ -5,7 +5,6 @@ import { RiFirebaseFill, RiNodejsLine } from 'react-icons/ri';
 import { BiLogoMongodb, BiLogoPostgresql } from 'react-icons/bi';
 import { DiSqllite } from 'react-icons/di';
 import './AboutMe.css';
-import Skills from './Skills';
 
 const About = () => {
     const [activeTab, setActiveTab] = useState('education');

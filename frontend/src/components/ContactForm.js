@@ -1,4 +1,3 @@
-// frontend/src/components/ContactForm.js
 import { useState } from 'react';
 import { db } from '../firebase';
 import { collection, addDoc } from 'firebase/firestore';

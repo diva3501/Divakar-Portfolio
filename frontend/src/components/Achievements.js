@@ -1,10 +1,9 @@
-// Achievements.js
 import React from 'react';
 import Achievement from './Achievement';
 import './Achievement.css';
 
 const Achievements = () => {
-    // Define the achievements
+
     const achievements = [
         {
             title: 'First Grade with distinction in Junior level typewriting in English',
